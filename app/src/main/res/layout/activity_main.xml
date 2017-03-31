@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.alejandro.hola.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calculador de area:"
+        android:textSize="36sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="normal|bold"
+        android:id="@+id/primero"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Bese:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/valor2"
+        android:layout_alignLeft="@+id/primero"
+        android:layout_alignStart="@+id/primero"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/textView"
+        android:textStyle="normal|bold"
+        android:textSize="24sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="45dp"
+        android:id="@+id/valor1"
+        android:layout_below="@+id/primero"
+        android:layout_alignRight="@+id/primero"
+        android:layout_alignEnd="@+id/primero"
+        android:hint="valor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:id="@+id/valor2"
+        android:hint="valor"
+        android:layout_below="@+id/valor1"
+        android:layout_alignLeft="@+id/valor1"
+        android:layout_alignStart="@+id/valor1" />
+
+    <TextView
+        android:text="Altura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/valor2"
+        android:layout_alignBottom="@+id/valor2"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <Button
+        android:text="Calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valor2"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:id="@+id/button2"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        tools:text="resultado"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp" />
+</RelativeLayout>
